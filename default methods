@@ -1,0 +1,23 @@
+package java8;
+
+interface nova{
+	void sub();
+	default void add() {
+		System.out.println("i am sub");
+	}
+	static void mel() {
+		System.out.println("i am mel");
+	}
+}
+public class DefaulttMethods {	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+         
+	nova n=()->System.out.println("hii hello");
+	n.sub();
+	n.add();
+    nova.mel();
+		
+	}
+
+}
